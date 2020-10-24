@@ -35,7 +35,7 @@ func main() {
 	for {
 		input, _ := reader.ReadString('\n')
 		input = strings.TrimSpace(input)
-		if strings.ToUpper(input) == "Q" {
+		if strings.ToLower(input) == ">q" {
 			return
 		}
 		data, err := proto.Encode(input)
